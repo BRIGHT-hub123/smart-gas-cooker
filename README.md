@@ -1,50 +1,28 @@
-# Welcome to your Expo app 👋
+# Smart Gas Cooker
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Smart Gas Cooker is a mobile monitoring application for an IoT-based gas leakage detection system. The app is designed to help a user monitor LPG concentration in real time, receive leak alerts, and control the gas shut-off valve through the interface.
 
-## Get started
+## What the application does
 
-1. Install dependencies
+- Displays live gas concentration readings from the MQ-2 sensor
+- Shows the current system state of the solenoid valve
+- Raises alerts when gas concentration reaches a warning or danger level
+- Records monitoring activity such as readings, alerts, and valve actions
+- Provides a simple mobile interface for observing the safety system remotely
 
-   ```bash
-   npm install
-   ```
+## Main screens
 
-2. Start the app
+- Home dashboard: shows the current gas concentration and valve status
+- Alerts screen: displays recent leak and warning notifications
+- History screen: shows monitoring logs and actions taken by the system
 
-   ```bash
-   npx expo start
-   ```
+## Project focus
 
-In the output, you'll find options to open the app in a
+This application is built around a gas leakage detection system and is not intended for gas level measurement, temperature monitoring, or general home automation. The main purpose is to support safe LPG leak detection and automatic shut-off response.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Technology used
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- React Native with Expo
+- Zustand for app state management
+- Expo Router for navigation
+- Lucide icons and custom UI components for the interface
