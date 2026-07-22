@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "smart-gas-cooker",
+    "name": "Smart Gas Cooker",
     "slug": "smart-gas-cooker",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -19,7 +19,13 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.bryttech.smartgascooker"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8ae4c745-9d7c-4a19-a517-477d21ab9419"
+      }
     },
     "web": {
       "output": "static",
